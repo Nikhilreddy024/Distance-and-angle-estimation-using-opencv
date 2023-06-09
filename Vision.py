@@ -1,4 +1,4 @@
-# Copyright Ari Wasch 2020
+
 import cv2 as cv2
 import numpy as np
 import math
@@ -10,8 +10,8 @@ class Vision:
     angle = 0.0  # Angle of largest contour relative to camera
     fittedHeight = 0.0  # Fitted height of the largest contour
     fittedWidth = 0.0  # Fitted width of the largest contour
-    knownWidth = 1.0  # Known Width of object at certain distance in units
-    knownHeight = 1.0  # Known height of object at certain distance in units
+    knownWidth = 2.0  # Known Width of object at certain distance in units
+    knownHeight = 2.0  # Known height of object at certain distance in units
 
     def __init__(self, pixelHeight, knownDistance, knownWidth, knownHeight):
         """
